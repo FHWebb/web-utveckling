@@ -1,0 +1,205 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+
+STORE
+
+*/
+
+#store {
+    width: 70%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.store_container li {
+    background: lightgray;
+    color: black;
+    margin: 0 auto;
+}
+
+.shopCard {
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pricetag {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.store_title {
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+
+.image-list p:last-child {
+    margin-top: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding-left: 0;
+}
+
+.grid p {
+    padding-left: 10px;
+}
+
+.grid p:first {
+    padding-top: 10px;
+}
+
+.list-view {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+.footer-container {
+    padding-top: 10rem;
+}
+
+.footer {
+    border-top: 2.5px solid rgb(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 3rem;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Public Sans', sans-serif;
+    background-color: lightgray;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+/*
+
+NAVIGATION
+
+*/
+
+.navigation a {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.navigation ul {
+    text-align: center;
+    padding-inline-start: 0;
+    background-color: lightgray;
+    overflow: hidden;
+margin:0;
+}
+
+.navigation li {
+    text-align: center;
+    display: inline;
+}
+
+.navigation li a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-weight: 600;
+}
+
+
+.navigation li a:hover,
+.navigation a.active {
+    color: white;
+    background-color: red;
+}
+
+.navigation .icon {
+    display: none;
+}
+
+
+#logo {
+    display: block;
+    height: 45px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top:2px;
+}
+
+/* källa: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {
+        display: none;
+    }
+
+    .navigation a.icon {
+        float: right;
+        display: block;
+        padding: 15px;
+    }
+
+    .navigation ul li {
+        display: none;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .navigation.responsive {
+        position: relative;
+    }
+
+    .navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navigation.responsive ul li {
+        display: block;
+    }
+}
