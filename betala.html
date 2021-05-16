@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sniff child production | Betala</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navigation" id="topNav">
+            <ul>
+                <a href="index.html">
+                    <img id="logo" src="img/logo.png" class="navlogo" alt="LOGO"></img>
+                </a>
+                <li><a href="index.html">HEM</a></li>
+                <li><a href="index.html#store">HANDLA</a></li>
+                <li><a href="betala.html" class="active">BETALA</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+                <li><a href="login.html">LOGGA IN</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i></a>
+            </ul>
+        </nav>
+        <script>
+            function toggleNav() {
+                var x = document.getElementById("topNav");
+                if (x.className === "navigation") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navigation";
+                }
+            }
+        </script>
+    </header>
+    <div class="login_mainframe" style="padding-bottom: 200px;">
+        <h1>Skriv in din info</h1>
+        <div class="login_formtable">
+            <h3>Kundkorg:</h3>
+            <ol class="image-list grid">
+                <li class="shopCard">
+                    <a href="https://google.com">
+                        <img class="thumbnail" src="https://i.imgur.com/uXxwaeR.png" alt="thumbnail">
+                        <p class="store_title">Föremål 1</p>
+                        <p>Detta föremål kan du köpa</p>
+                        <p class="pricetag">68kr</p>
+                    </a>
+                </li>
+                <li class="shopCard">
+                    <a href="https://google.com">
+                        <img class="thumbnail" src="https://i.imgur.com/uXxwaeR.png" alt="thumbnail">
+                        <p class="store_title">Föremål 1</p>
+                        <p>Detta föremål kan du köpa</p>
+                        <p class="pricetag">68kr</p>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <form class="login_formtable" action="betala2.html">
+            <label class="label">Fullt namn</label><br>
+            <input class="textbox" type="text" placeholder="Fabian Hugo" required><br>
+            <br>
+            <label class="label">Mejladress</label><br>
+            <input class="textbox" type="text" placeholder="hugo@email.com" required><br>
+            <br>
+            <label class="label">Adress</label><br>
+            <input class="textbox" type="text" placeholder="Kungsgatan 84"><br>
+            <br>
+            <label class="label">Postnummer</label><br>
+            <input class="textbox" type="text" placeholder="121 93"><br>
+            <br>
+            <label class="label">Postort</label><br>
+            <input class="textbox" type="text" placeholder="Stockholm"><br>
+            <br>
+            </ul>
+            <button class="submitbutton" style="background-color: #D4FEFF">Gå vidare</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p><b>Sniff child production</b><br>
+            <a href="https://goo.gl/maps/85wcJmZkBmoiF67BA">Kungsgatan 84, 112 93 Stockholm</a></p>
+    </div>
+</body>
+
+</html>

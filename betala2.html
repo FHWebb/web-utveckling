@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Sniff child production | Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sniff child production | Betala</title>
 
 </head>
 
@@ -20,9 +21,9 @@
                     <img id="logo" src="img/logo.png" class="navlogo" alt="LOGO"></img>
                 </a>
                 <li><a href="index.html">HEM</a></li>
-                <li><a href=#shop>HANDLA</a></li>
                 <li><a href="index.html#store">HANDLA</a></li>
-                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+                <li><a href="betala.html" class="active">BETALA</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
                 <li><a href="login.html">LOGGA IN</a></li>
                 <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
                     <i class="fa fa-bars"></i></a>
@@ -39,35 +40,37 @@
             }
         </script>
     </header>
+    <div class="login_mainframe" style="padding-bottom: 200px;">
+        <h1>Betala</h1>
+        <div class="login_formtable">
+            <h3>Du har 2 produkter i din kundkorg.</h3>
+        </div>
 
-    <div class="login_mainframe">
-        <h1>Frågor? Kontakta oss!</h1>
-        <form class="login_formtable">
-            <label class="label">Namn*</label><br>
-            <input class="textbox" type="text" id="username" placeholder="" required><br>
+        <form class="login_formtable" action="betala2.html">
+            <label class="label">Fullt namn</label><br>
+            <input class="textbox" type="text" placeholder="Fabian Hugo" required><br>
             <br>
-            <label class="label">Mejladress*</label><br>
-            <input class="textbox" type="text" required><br>
+            <label class="label">Kortnummer</label><br>
+            <input class="textbox" type="text" placeholder="1234 6868 1488 1337" required><br>
             <br>
-            <label class="label">Ordernummer</label><br>
-            <input class="textbox" type="text"><br>
+            <label class="label">Utgångsdatum</label><br>
+            <input class="textbox" type="text" placeholder="13/23"><br>
             <br>
-            <label class="label">Meddelande*</label><br>
-            <textarea class="textbox" type="text" style="height:200px;"></textarea>
+            <label class="label">CVV</label><br>
+            <input class="textbox" type="text" placeholder="462"><br>
             <br>
             </ul>
-            <button class="submitbutton" style="background-color: #D4FEFF" onclick="send()">Skicka</button>
+            <button class="submitbutton" style="background-color: #D4FEFF" onclick="pay();">Betala</button>
         </form>
     </div>
     <script>
-        function send() {
-            alert("Tack för att du kontakade oss! Vi kommer mejla dig inom 24 timmar.");
+        function pay() {
+            alert("Tack för din betalning! Vi kommer mejla en orderbekräftelse.");
         }
     </script>
-    <div class="footer-container">
-        <div class="footer">
-            <p>Kungsgatan 84, 112 93 Stockholm</p>
-        </div>
+    <div class="footer">
+        <p><b>Sniff child production</b><br>
+            <a href="https://goo.gl/maps/85wcJmZkBmoiF67BA">Kungsgatan 84, 112 93 Stockholm</a></p>
     </div>
 </body>
 
