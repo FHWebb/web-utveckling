@@ -16,7 +16,7 @@ STORE
     width: 70%;
     max-width: 1400px;
     margin: auto;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
 }
 
 .banner {
@@ -44,6 +44,12 @@ STORE
 @media screen and (max-width: 600px) {
     .bannertext {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bannertext {
+        font-size: 20px;
     }
 }
 
@@ -120,6 +126,7 @@ FOOTER
 */
 
 .footer {
+    position: fixed;
     padding: 20px 0;
     left: 0;
     bottom: 0;
@@ -184,7 +191,7 @@ NAVIGATION
 
 /* källa: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 350px) {
     .navigation a:not(:first-child) {
         display: none;
     }
@@ -245,7 +252,7 @@ FORMULÄR
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     padding: 14px;
     min-height: 20px;
-    min-width: 100px;
+    min-width: 150px;
 }
 
 
@@ -259,4 +266,9 @@ FORMULÄR
     text-align: center;
     position: relative;
     margin-top: 20px;
+}
+
+.textbox{
+    width: 60%;
+    min-width: 150px;
 }

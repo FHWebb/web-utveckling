@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Sniff child production | Logga in</title>
+    <title>Sniff child production | Kontakt</title>
 
 </head>
 
@@ -22,8 +22,8 @@
                 <li><a href="index.html">HEM</a></li>
                 <li><a href=#shop>HANDLA</a></li>
                 <li><a href="betala.html">BETALA</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-                <li><a href="login.html" class="active">LOGGA IN</a></li>
+                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+                <li><a href="login.html">LOGGA IN</a></li>
                 <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
                     <i class="fa fa-bars"></i></a>
             </ul>
@@ -41,31 +41,27 @@
     </header>
 
     <div class="login_mainframe">
-        <h1>Logga in till ditt kundkonto</h1>
+        <h1>Frågor? Kontakta oss!</h1>
         <div class="login_formtable">
-            <label class="label">Användarnamn</label><br>
+            <label class="label">Namn*</label><br>
             <input class="textbox" type="text" id="username" placeholder="" required><br>
             <br>
-            <label class="label">Lösenord</label><br>
-            <input class="textbox" type="password" required><br>
+            <label class="label">Mejladress*</label><br>
+            <input class="textbox" type="text" required><br>
+            <br>
+            <label class="label">Ordernummer</label><br>
+            <input class="textbox" type="text"><br>
+            <br>
+            <label class="label">Meddelande*</label><br>
+            <textarea class="textbox" type="text" style="height:200px;"></textarea>
             <br>
             </ul>
-            <button class="submitbutton" style="background-color: #E8FFD4" onclick="createAcc()">Skapa konto</button>
-            <button class="submitbutton" style="background-color: #D4FEFF" onclick="login()">Logga in</button>
-            <button class="submitbutton" style="background-color: #FFD5D4" onclick="forgotPass()">Glömt lösenord</button>
+            <button class="submitbutton" style="background-color: #D4FEFF" onclick="send()">Skicka</button>
         </div>
     </div>
     <script>
-        function createAcc() {
-            alert("Välkommen " + document.getElementById("username").value);
-        }
-
-        function login() {
-            alert("Välkommen tillbaka" + document.getElementById("username").value);
-        }
-
-        function forgotPass() {
-            alert("Kolla din epost för att få ditt lösenord");
+        function send() {
+            alert("Tack för att du kontakade oss! Vi kommer mejla dig inom 24 timmar.");
         }
     </script>
     <div class="footer-container">
