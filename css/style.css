@@ -191,7 +191,7 @@ NAVIGATION
 
 /* källa: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
     .navigation a:not(:first-child) {
         display: none;
     }
@@ -208,7 +208,7 @@ NAVIGATION
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .navigation.responsive {
         position: relative;
     }
